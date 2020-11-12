@@ -14,16 +14,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      run: |
-           git clone https://github.com/PathwayAndDataAnalysis/causalpath
-           cd causalpath
-           git checkout 6cc76b3cbfbb3b3f861e8f78564e659cee7ede32
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
     - name: Build with Maven
       run: |
+           git clone https://github.com/PathwayAndDataAnalysis/causalpath
+           cd causalpath
+           git checkout 6cc76b3cbfbb3b3f861e8f78564e659cee7ede32
            mvn clean install
            mvn assembly:single
