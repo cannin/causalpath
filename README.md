@@ -1,3 +1,5 @@
+![Maven Build](https://github.com/cannin/causalpath/workflows/maven/badge.svg)
+
 # CausalPath
 This is a tool for pathway analysis of proteomic and phosphoproteomic datasets. CausalPath aims to identify mechanistic pathway relations that can explain observed correlations in experiments. In the below example, the mesenchymal subtype of ovarian cancer is compared against other subtypes. This graph is focused on the downregulation of MAPK3 in this subtype, suggesting several mechanisms that probably caused it (upstream), and showing its likely downstream effect.
 
